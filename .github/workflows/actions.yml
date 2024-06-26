@@ -17,7 +17,7 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > key.pem
           chmod 600 key.pem
           mkdir -p ~/.ssh
-          ssh-keyscan -H your-vps-ip >> ~/.ssh/known_hosts
+          ssh-keyscan -H 82.153.226.21 >> ~/.ssh/known_hosts
         shell: bash
       # - name: connect to vpss
       #   run: ssh -T -v root@82.153.226.21
