@@ -22,7 +22,7 @@ jobs:
 
       - name: Deploy to VPS
         run: |
-          ssh -i key.pem -o StrictHostKeyChecking=no root@82.153.226.21 'bash -s' < /home/deploy/deploy.sh
+          ssh -i key.pem -o StrictHostKeyChecking=no root@82.153.226.21 'bash -s' < cd .. && cd /home/deploy/deploy.sh
         shell: bash
       # - name: connect to vpss
       #   run: ssh -T -v root@82.153.226.21
