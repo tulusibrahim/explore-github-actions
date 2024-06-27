@@ -19,6 +19,11 @@ jobs:
           mkdir -p ~/.ssh
           ssh-keyscan -H 82.153.226.21 >> ~/.ssh/known_hosts
         shell: bash
+        
+      - name: Deploy to VPS
+      run: |
+        ssh -i key.pem -o StrictHostKeyChecking=no user@your-vps-ip 'bash -s' < /home/deploy/deploy.sh
+      shell: bash
       # - name: connect to vpss
       #   run: ssh -T -v root@82.153.226.21
       #   env:
