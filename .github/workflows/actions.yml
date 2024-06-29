@@ -17,6 +17,7 @@ jobs:
         with:
           host: root
           username: root
+          password: ${{ secrets.PASSWORD }}
           port: 22
           script: |
             pwd
