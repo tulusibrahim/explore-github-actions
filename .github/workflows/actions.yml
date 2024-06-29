@@ -22,6 +22,7 @@ jobs:
           script: |
             cd /root/tes-vps-app
             git pull
+            yarn install
             yarn build
       #   run: |
       #     echo "${{ secrets.SSH_PRIVATE_KEY }}" > key.pem
