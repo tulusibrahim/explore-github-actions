@@ -15,7 +15,7 @@ jobs:
       - name: Connect to VPS
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: cobavps
+          host: 82.153.226.21
           username: root
           password: ${{ secrets.PASSWORD }}
           port: 22
