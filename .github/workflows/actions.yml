@@ -20,8 +20,9 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: 22
           script: |
-            pwd
-            ls
+            cd /root/tes-vps-app
+            git pull
+            yarn build
       #   run: |
       #     echo "${{ secrets.SSH_PRIVATE_KEY }}" > key.pem
       #     chmod 600 key.pem
