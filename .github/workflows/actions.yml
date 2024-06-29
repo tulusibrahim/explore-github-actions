@@ -25,7 +25,6 @@ jobs:
           script: |
             cd /root/tes-vps-app
             git pull
-            node -v
             # yarn install
             # yarn build
       #   run: |
