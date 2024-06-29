@@ -26,6 +26,7 @@ jobs:
             cd /root/tes-vps-app
             git pull
             node -v
+            nvm use 18.18
             yarn install
             yarn build
       #   run: |
